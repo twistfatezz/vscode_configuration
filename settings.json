@@ -1,0 +1,101 @@
+{
+    "python.pythonPath": "/Users/mac/anaconda/bin/python",
+    "cmake.cmakePath": "/usr/local/bin/cmake",
+
+    "remote.SSH.showLoginTerminal": false,
+    "window.zoomLevel": 0,
+    "editor.detectIndentation": false,
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": true,
+    "todohighlight.keywords": [
+        "REVIEW:",
+        {
+            "text": "todo:",
+            "color": "rgba(43,252,45,1)",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "overviewRulerColor": "rgba(43,252,45,1)"},
+        {
+            "text": "TODO:",
+            "color": "rgba(43,252,45,1)",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "overviewRulerColor": "rgba(43,252,45,1)"},
+        {
+            "text": "fixme:",
+            "color": "rgba(43,252,45,1)",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "overviewRulerColor": "rgba(43,252,45,1)"},
+        {
+            "text": "FIXME:",
+            "color": "rgba(43,252,45,1)",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "overviewRulerColor": "rgba(43,252,45,1)"}
+    ],
+    // linting
+    "python.linting.pep8Args": [
+        "--ignore=E501,E226,E702,W293,E402,E126,E241,E127,E225,W291,E128"
+    ],
+    // file header -> alt + h
+    "psi-header.templates": [
+        {
+            "language": "*",
+            "template": [
+                "File: <<filepath>>",
+                "Project: <<projectpath>>",
+                "Created Date: <<filecreated('dddd MMMM Do YYYY h:mm:ss:a')>>",
+                "Author: bigmelon",
+            ]
+        }
+    ],
+    // terminal related
+    // "terminal.integrated.shell.osx": "/bin/bash",
+    // "terminal.explorerKind": "external",
+    // "terminal.external.osxExec": "/Applications/iTerm.app",
+    // "workbench.editor.showIcons": false,
+
+    // self-defined color theme --- rainglow(box uk/spearmint contrast) --- vs studio dark(chosen)
+    "editor.tokenColorCustomizations": {
+        "comments": "#196903", // 注释
+        // "keywords": "#af5903", // 关键字
+        "strings": "#ffffff69", // 字符串
+        "numbers": "#ffffff69", // 数字
+        // "types": "#ff00007a",
+        "textMateRules": [
+            {
+            "name": "bold",
+            // "scope": ["entity.name.function", "entity.name.type"],
+            "scope": ["entity.name.function"],
+            "settings": {"fontStyle": "bold"}
+            },
+        ],
+    },
+    "editor.mouseWheelScrollSensitivity": 0.4,
+    "editor.smoothScrolling": true,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "terminal.integrated.shell.osx": "/bin/bash",
+
+    // for pony ssh config -> not working for wrong pony.worker decode style???
+    // "ponyssh.hosts": {
+    //     "p100": {
+    //         "host": "183.136.134.153",
+    //         "port": 32222,
+    //         "username": "dongh",
+    //         // "password": "bigmelon",
+    //         "path": "/share/donghao",
+    //         "privateKeyFile": "~/.ssh/id_rsa_p100",
+    //         "python": "/share/donghao/anaconda3/bin/python3.6",
+    //         "agent": true
+    //     }
+    // },
+    
+    // for remote fs -> best ssh till now!
+    "remotefs.remote": {
+        "p100": {
+            "scheme": "sftp",
+            "host": "183.136.134.153",
+            "port": 32222,
+            "username": "dongh",
+            "privateKeyPath": "/Users/mac/.ssh/id_rsa_p100",
+            "rootPath": "/share/donghao",
+        }
+    },
+}
