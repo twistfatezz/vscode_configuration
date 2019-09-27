@@ -1,0 +1,23 @@
+User set keyboard-shortcuts...
+
+#1 - check
+alt+1= go to definition
+alt+2=return back to usages
+alt+3=close (alt+1/alt+2) panel
+
+#2 - debug
+alt+4=toggle or cancel breakpoints
+alt+5=start debugging
+alt+shift+5=stop debugging
+alt+6=go to next breakpoints when debugging
+alt+7=step over
+alt+8=step into
+alt+9=step out
+
+#3 others
+shift+( => (input)
+
+
+# cmd + xxx
+cmd + j -> open/close integrated terminal
+cmd + b -> open/close debug sidebar
