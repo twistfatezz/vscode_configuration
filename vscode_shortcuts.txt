@@ -23,3 +23,4 @@ cmd + j -> open/close integrated terminal
 cmd + b -> open/close debug sidebar
 cmd + , -> goto settings
 cmd + shift + p -> goto vscode command-line 
+cmd + shift + b -> cpp build and make
